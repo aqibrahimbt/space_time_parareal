@@ -1,0 +1,5 @@
+torch>=2.0
+numpy<2
+dask[distributed]
+matplotlib
+mpi4py
