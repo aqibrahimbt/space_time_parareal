@@ -106,3 +106,5 @@ The figures in `reports/` document runtime, speedup, and efficiency for later an
 - The FNO is trained on collocation points sampled from the fine solver, blending supervised next-slice prediction with interior masks so the PINO learns the PDE structure without explicit residual losses.
 - The fine solver boundary conditions are enforced at each time step and can be parallelized via Dask’s `delayed` tasks; adjust `--chunk-size` and spatial resolution depending on dataset size.
 - Parareal integrates over the precomputed time grid and keeps track of coarse/fine timings so you can benchmark speedups once the PINO is stable.
+
+## 
